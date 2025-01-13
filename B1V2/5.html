@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostrarcesta()
+        {
+            let precio, cantidad, importe
+        precio=prompt("Introduzca precio");
+        cantidad=prompt("Introduzca cantidad que lleva el cliente");
+        importe=parseInt(precio) * parseInt(cantidad);
+        
+        return "Los " +cantidad+ " productos con el valor de " +precio+"€ cada uno suman el total de: "+importe+"€."
+        }
+
+        let resultado=mostrarcesta();
+        document.write(resultado);
+    </script>
+</body>
+</html>

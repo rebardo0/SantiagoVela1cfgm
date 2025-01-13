@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Edad() 
+        {
+            const mayor18=document.getElementById("mayor18").checked;
+            if (mayor18) 
+            {
+                alert("Puedes ingresar");
+            } 
+            else 
+            {
+                alert("No puedes ingresar");
+            }
+        }
+    </script>
+
+    <form>
+        <p>¿Eres mayor de 18 años?</p>
+        <input type="radio" id="mayor18" name="edad" value="si">
+        <label for="mayor18">Si</label><br><br>
+
+        <input type="radio" id="menor18" name="edad" value="no">
+        <label for="menor18">No</label><br><br>
+
+        <button type="button" onclick="Edad()">Enviar</button>
+    </form>
+</body>
+</html>

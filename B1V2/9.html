@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function MostrarNotas()
+        {
+            let suma = 0 , cantidad = 3;
+        
+        for (let acumulador = 0; acumulador < cantidad; acumulador++)
+        {
+            let nota = parseInt(prompt("Ingresa nota"));
+            suma += nota;
+        }
+
+            let promedio = suma / cantidad;
+        
+        if (promedio>=4)
+        {
+        return "Regular"
+        }
+
+        else 
+        {
+        return "Reprobado"
+        }
+        }
+            let resultado=MostrarNotas()
+            document.write(resultado);
+    </script>
+</body>
+</html>

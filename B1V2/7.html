@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Ejercicio 7v2</title>
+        </head>
+        <body>
+            <script>
+                
+                function resultado(){
+                    let numero1 = 0, numero2 = 0;
+                    numero1 = parseInt(prompt("Introduzca el primer número"));
+                    numero2 = parseInt(prompt("Introduzca el segundo número"));
+                    function suma(){
+                    
+                    suma = numero1 + numero2;
+                    return suma;
+                }
+                function diferencia(){
+                    let numero1 = 0, numero2 = 0;
+                    diferencia = numero1 - numero2;
+                    return diferencia
+                }
+                function producto(){
+                  
+                    producto = numero1 * numero2;
+                    return producto;
+                }
+                function division(){
+                    
+                    division = numero2 / numero1;
+                    return division;
+                }
+                    let textoEnPantalla;
+                    if (numero1 > numero2) {
+                        let sumaResultado=suma();
+                        let diferenciaResultado=diferencia();
+                        textoEnPantalla="El numero 1 es mayor al número 2 <br>"+"La suma de ambos números es: " + sumaResultado + "<br>"+"La diferencia de ambos números es: " + diferenciaResultado;
+                        
+                    } else {
+                        let productoResultado=producto();
+                        let divisionResultado=division();
+                        textoEnPantalla="El numero 1 es menor al número 2 <br>"+"El producto de ambos números es: " + productoResultado + "<br>"+"La división de ambos números es: " + divisionResultado;
+                        
+                    }
+                    return textoEnPantalla;
+                }
+                let resultadoTotal=resultado()
+                document.write(resultadoTotal)
+            </script>
+</body>
+</html>

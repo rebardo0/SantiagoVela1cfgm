@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostrarValor()
+    {
+        let numero=0;
+        numero=parseInt(prompt("Ingrese un valor entre el 1 y el 99"));
+        
+        if (numero<10)
+        {
+        return "El valor tiene un digito"
+        }
+
+        else 
+        {
+        return "El valor tiene dos digitos"
+        }
+    }
+
+        let resultado=mostrarValor()
+        document.write(resultado);
+
+    </script>
+</body>
+</html>

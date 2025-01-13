@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Deportes()
+        {
+            const deportes=document.getElementsByName("deporte");
+            let mensaje="Los deportes que practicas son: ";
+
+            for (let i=0;i<deportes.length;i++) 
+            {
+                if (deportes[i].checked) 
+                {
+                    mensaje+=deportes[i].value +", ";
+                }
+            }
+            alert(mensaje);
+        }
+    </script>
+
+        <p>Selecciona los deportes que practicas:<p>
+
+        <form>
+            <input type="checkbox" id="futbol" name="deporte" value="futbol">
+            <label for="futbol">Fútbol</label><br>
+
+            <input type="checkbox" id="basket" name="deporte" value="baloncesto">
+            <label for="baloncesto">Baloncesto</label><br>
+
+            <input type="checkbox" id="tenis" name="deporte" value="tenis">
+            <label for="tenis">Tenis</label><br><br>
+
+            <button type="button" onclick="Deportes()">Enviar</button>
+        </form>
+</body>
+</html>

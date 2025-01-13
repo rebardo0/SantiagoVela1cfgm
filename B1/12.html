@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero;
+        numero=parseInt(prompt("Introduzca un número de 1,2 o 3 cifras"));
+        
+        if (numero<10) 
+        {
+            document.write("Tiene un dígito");
+        } 
+        
+        else 
+        {
+            if (numero<100) 
+            {
+                document.write("Tiene dos dígitos");
+            } 
+            
+            else 
+            {
+                document.write("Tiene tres dígitos");
+            }
+        }
+    </script>
+</body>
+</html>

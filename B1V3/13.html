@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function MostrarValor(valor1, valor2, valor3, resultado)
+        {
+            if (valor1==valor2&&valor1==valor3) 
+            {
+                return "La suma de los dos primeros valores y multiplicado la suma por el tercero seria:" + resultado;
+            }
+        }
+
+            valor1=parseInt(prompt("Introduzca el primer valor"));
+            valor2=parseInt(prompt("Introduzca el segundo valor"));
+            valor3=parseInt(prompt("Introduzca el tercer valor"));
+
+        let resultado=(valor1+valor2)*valor3;
+        let resultadoTotal=MostrarValor(valor1, valor2, valor3, resultado)
+        document.write(resultadoTotal);
+    </script>
+</body>
+</html>

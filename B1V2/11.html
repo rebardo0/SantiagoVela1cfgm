@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostrarValor()
+    {
+        let numero=0;
+        numero=parseInt(prompt("Introduzca un valor entero"));
+        
+        if (numero==0) 
+        {
+            return "El valor ingresado es cero"
+        } 
+        
+        else 
+        {
+            if (numero>0) 
+            {
+                return "El valor es positivo"
+            } 
+            else 
+            {
+                return "El valor es negativo"
+            }
+        }
+    }
+            let resultado=mostrarValor()
+            document.write(resultado);
+    </script>
+</body>
+</html>

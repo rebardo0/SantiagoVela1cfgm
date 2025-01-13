@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sueldo, antiguedad;
+
+        sueldo=parseFloat(prompt("Ingrese el sueldo del empleado"));
+        antiguedad = parseInt(prompt("Ingrese la antigüedad del empleado"));
+        
+        if (sueldo<500&&antiguedad>=10) 
+        {
+            document.write("Se otorga un aumento del 20%" + "<br>");
+            let sueldototal=sueldo+sueldo*0.20;
+            document.write('Sueldo total:' + sueldototal);
+        } 
+        
+        else 
+        {
+            if (sueldo<500&&antiguedad<10) 
+            {
+                document.write("Se otorga un aumento del 5%" + "<br>");
+                let sueldototal=sueldo+sueldo*0.05;
+                document.write("Sueldo total:" + sueldototal);
+            } 
+            
+            else 
+            {
+                document.write("El sueldo queda sin cambio:" + sueldo);
+            }
+        }
+    </script>
+</body>
+</html>

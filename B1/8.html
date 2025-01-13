@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota1=0, nota2=0, nota3=0;
+
+        nota1=parseInt(prompt("Ingrese primera nota"));
+        nota2=parseInt(prompt("Ingrese segunda nota"));
+        nota3=parseInt(prompt("Ingrese tercera nota"));
+
+        let suma, promedio
+        
+        suma=nota1 + nota2 + nota3;
+        promedio=suma/3;
+        
+        if (promedio>=4)
+        {
+            document.write("Regular");
+        }
+        else
+        {
+            document.write("Reprobado");
+        }
+
+    </script>
+</body>
+</html>

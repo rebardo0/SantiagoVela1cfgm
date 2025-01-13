@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <select onchange=mostrarprecioPizza(this.value) name="pizzas" id="seleccion">
+            <option value="jamon">Jamón y Queso</option>
+            <option value="Mexicana">Mexicana</option>
+            <option value="Barbacoa">Barbacoa</option>
+            <option value="muzzarella">Muzzarella</option>
+            <option value="morrones">Morrones</option>
+        </select>
+        <input id="resultado" type="text" disabled>
+    </form>
+
+    <script>
+        const resultado = document.getElementById("resultado");
+
+        function mostrarprecioPizza(pizza) 
+        {
+            switch (pizza) 
+            {
+                case "jamon":
+                    resultado.value = "10€"
+                    break;
+                case "Mexicana":
+                    resultado.value = "25€"
+                    break;
+                case "Barbacoa":
+                    resultado.value = "5€"
+                    break;
+                case "muzzarella":
+                    resultado.value = "20€"
+                    break;
+                case "morrones":
+                    resultado.value = "30€"
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
